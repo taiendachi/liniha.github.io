@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamus Nias - Terjemahan & Kosakata Bahasa Nias</title>
+    
+    <!-- SEO Meta Tags for Search Engines (Hidden from UI) -->
+    <meta name="description" content="Kamus Nias Online, Kamus Bahasa Daerah Nias, Translate Li Niha, Terjemahan Bahasa Nias">
+    <meta name="keywords" content="Kamus Nias, Kamus Nias Online, Kamus Bahasa Nias, Li Niha, Nias Translate, Terjemahan Nias">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Kamus Nias">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Kamus Nias - Terjemahan & Kosakata Bahasa Nias">
+    <meta property="og:description" content="Kamus Nias Online, Kamus Bahasa Daerah Nias, Translate Li Niha, Terjemahan Bahasa Nias">
+    <meta property="og:url" content="https://kamusnias.or.id">
+    <meta property="og:type" content="website">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kamusnias.or.id" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#fde68a', // Amber-200
+                            DEFAULT: '#d97706', // Amber-600
+                            dark: '#92400e', // Amber-800
+                        },
+                        niass: {
+                            red: '#dc2626', // Red representing traditional Nias colors
+                            gold: '#fbbf24',
+                            black: '#171717'
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Base Background Pattern */
+        body {
+            background-color: #f8fafc; /* Slate 50 */
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+            min-height: 100vh;
+        }
+
+        /* Glassmorphism utility */
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Delay utilities for animation */
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+        .delay-500 { animation-delay: 500ms; }
+
+        /* Custom link hover effect */
+        .link-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .link-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="antialiased text-gray-800 relative overflow-x-hidden selection:bg-brand-light selection:text-brand-dark">
+
+    <!-- Decorative Background Orbs -->
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-brand-light/40 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+        <div class="absolute top-[20%] right-[-10%] w-96 h-96 bg-niass-gold/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-[-20%] left-[20%] w-96 h-96 bg-niass-red/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="max-w-xl mx-auto min-h-screen px-4 py-12 flex flex-col items-center justify-center relative z-10">
+        
+        <!-- Profile Header -->
+        <header class="w-full flex flex-col items-center mb-10 opacity-0 animate-fade-in-up">
+            <!-- Avatar/Logo -->
+            <div class="relative mb-4 group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-niass-red via-brand to-niass-gold rounded-full blur opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <!-- Menggunakan logo yang diberikan user dengan ukuran lebih besar dan object-contain agar lebih jelas -->
+                <div class="relative w-32 h-32 bg-white rounded-full p-1.5 shadow-xl flex items-center justify-center overflow-hidden border-2 border-white">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaxR1jXN5R6loBiRr2Mao46qDY6cMnAeAzaWx-UFx4q4DeDU7y0muQgFZLsTY5PVc6q7XTDAhW_NjveD0qhp11nrFyieXBYSURug7oSQiAWYVr2op1bBRsaqHu51dMTr3TLHUT64UJZ4R4flySb2l01AU4Huet9dASICxmTotTcUiEjExjvDzsTzaYfqY/s320-rw/kamus%20nias.png" alt="Kamus Nias Logo" class="w-full h-full object-contain rounded-full" id="logo-img" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';">
+                    <!-- SVG Fallback Icon -->
+                    <div id="logo-fallback" class="w-full h-full bg-slate-100 rounded-full hidden flex-col items-center justify-center text-brand-dark">
+                        <i class="fa-solid fa-book-atlas text-3xl mb-1"></i>
+                        <span class="text-xs font-bold font-serif">Kamus</span>
+                        <span class="text-xs font-bold font-serif">Nias</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Title & Domain -->
+            <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight text-center mb-1 flex items-center gap-2">
+                Kamus Nias
+                <i class="fa-solid fa-circle-check text-blue-500 text-lg" title="Verified"></i>
+            </h1>
+            <a href="https://kamusnias.or.id" class="text-brand font-medium mb-3 hover:text-brand-dark transition-colors flex items-center gap-1">
+                <i class="fa-solid fa-link text-sm"></i> kamusnias.or.id
+            </a>
+            
+            <!-- Description -->
+            <p class="text-gray-600 text-center max-w-sm text-sm font-medium">
+                Pusat Referensi & Terjemahan Bahasa Nias terlengkap. Mari lestarikan bahasa daerah kepulauan Nias.
+            </p>
+        </header>
+
+        <!-- Links Section -->
+        <div class="w-full space-y-4 mb-12">
+            
+            <!-- Link 1: Website Utama -->
+            <a href="https://kamusnias.or.id" target="_blank" rel="noopener noreferrer" 
+               class="link-card glass block w-full rounded-2xl p-4 flex items-center justify-between opacity-0 animate-fade-in-up delay-100 border-l-4 border-l-brand">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-brand/10 text-brand flex items-center justify-center text-xl shadow-sm">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-gray-800 text-lg">Website Utama</h2>
+                        <p class="text-xs text-gray-500">Akses Kamus Nias Online</p>
+                    </div>
+                </div>
+                <div class="text-gray-400 pr-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </a>
+
+            <!-- Link 2: Artikel -->
+            <a href="https://kamusnias.or.id/blog" target="_blank" rel="noopener noreferrer" 
+               class="link-card glass block w-full rounded-2xl p-4 flex items-center justify-between opacity-0 animate-fade-in-up delay-200">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-orange-500/10 text-orange-600 flex items-center justify-center text-xl shadow-sm">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-gray-800 text-lg">Artikel (Blog)</h2>
+                        <p class="text-xs text-gray-500">Berita dan tulisan terbaru</p>
+                    </div>
+                </div>
+                <div class="text-gray-400 pr-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </a>
+
+            <!-- Link 3: Facebook -->
+            <a href="https://web.facebook.com/kamusnias" target="_blank" rel="noopener noreferrer" 
+               class="link-card glass block w-full rounded-2xl p-4 flex items-center justify-between opacity-0 animate-fade-in-up delay-300">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-[#1877F2]/10 text-[#1877F2] flex items-center justify-center text-xl shadow-sm">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-gray-800 text-lg">Facebook Fanpage</h2>
+                        <p class="text-xs text-gray-500">Ikuti pembaruan & komunitas kami</p>
+                    </div>
+                </div>
+                <div class="text-gray-400 pr-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </a>
+
+            <!-- Link 4: Instagram -->
+            <a href="https://www.instagram.com/kamusniasorid" target="_blank" rel="noopener noreferrer" 
+               class="link-card glass block w-full rounded-2xl p-4 flex items-center justify-between opacity-0 animate-fade-in-up delay-400">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-[#fd5949] to-[#d6249f] text-white flex items-center justify-center text-xl shadow-sm">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-gray-800 text-lg">Instagram</h2>
+                        <p class="text-xs text-gray-500">Kosakata bergambar harian</p>
+                    </div>
+                </div>
+                <div class="text-gray-400 pr-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </a>
+
+            <!-- Link 5: X / Twitter -->
+            <a href="https://x.com/kamusniascom" target="_blank" rel="noopener noreferrer" 
+               class="link-card glass block w-full rounded-2xl p-4 flex items-center justify-between opacity-0 animate-fade-in-up delay-500">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-black/5 text-black flex items-center justify-center text-xl shadow-sm border border-gray-200">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-gray-800 text-lg">X (Twitter)</h2>
+                        <p class="text-xs text-gray-500">Diskusi bahasa & fakta singkat</p>
+                    </div>
+                </div>
+                <div class="text-gray-400 pr-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </a>
+
+            <!-- Link 6: Pinterest -->
+            <a href="https://id.pinterest.com/kamusnias" target="_blank" rel="noopener noreferrer" 
+               class="link-card glass block w-full rounded-2xl p-4 flex items-center justify-between opacity-0 animate-fade-in-up" style="animation-delay: 600ms;">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-[#E60023]/10 text-[#E60023] flex items-center justify-center text-xl shadow-sm">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-gray-800 text-lg">Pinterest</h2>
+                        <p class="text-xs text-gray-500">Koleksi visual budaya & bahasa</p>
+                    </div>
+                </div>
+                <div class="text-gray-400 pr-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </a>
+
+            <!-- Link 7: LinkedIn -->
+            <a href="https://www.linkedin.com/in/kamusnias/" target="_blank" rel="noopener noreferrer" 
+               class="link-card glass block w-full rounded-2xl p-4 flex items-center justify-between opacity-0 animate-fade-in-up" style="animation-delay: 700ms;">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-[#0A66C2]/10 text-[#0A66C2] flex items-center justify-center text-xl shadow-sm">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-gray-800 text-lg">LinkedIn</h2>
+                        <p class="text-xs text-gray-500">Jaringan profesional & artikel</p>
+                    </div>
+                </div>
+                <div class="text-gray-400 pr-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </a>
+
+            <!-- Link 8: Personal Blog -->
+            <a href="https://taien.web.id" target="_blank" rel="noopener noreferrer" 
+               class="link-card glass block w-full rounded-2xl p-4 flex items-center justify-between opacity-0 animate-fade-in-up" style="animation-delay: 800ms;">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-teal-500/10 text-teal-600 flex items-center justify-center text-xl shadow-sm">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-bold text-gray-800 text-lg">Personal Blog</h2>
+                        <p class="text-xs text-gray-500">Blog pribadi & catatan</p>
+                    </div>
+                </div>
+                <div class="text-gray-400 pr-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+
+        <!-- Footer yang sudah diperbaiki -->
+        <footer class="w-full text-center pb-8 opacity-0 animate-fade-in-up" style="animation-delay: 900ms;">
+            <p class="text-gray-500 text-sm font-medium">
+                &copy; 2026 Kamus Nias. Hak Cipta Dilindungi.
+            </p>
+        </footer>
+    </main>
+
+</body>
+</html>
